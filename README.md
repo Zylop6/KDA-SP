@@ -85,6 +85,7 @@ Since this is the initial version of KDA-SP, there is currently no Changelog ava
 - [Tesseract](https://github.com/tesseract-ocr/tesseract) 
 <br>
 ##
+
 ### Support
 
 At the moment, there is no option for financial support. However, this may change in the future. Please refer to the latest version of KDA-SP and its corresponding README file to check for any updates regarding financial support.
