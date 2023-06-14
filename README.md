@@ -18,7 +18,7 @@ I sincerely appreciate any constructive critique, as my goal is to continue lear
 ## Changelog
 Since this is the initial version of KDA-SP, there is currently no Changelog available. However, future versions of the program will include a Changelog documenting the changes, improvements, and bug fixes introduced in each update.
 ## Installation:
-1.  Navigate to the [release page](https://github.com/Zylop6/KDA-SP/releases) of the program.
+1.  Navigate to the [release page](https://github.com/Zylop6/KDA-SP/releases) of KDA-SP.
 2.  Choose your desired version from the available releases.
 3.  Read the installation instructions provided in the description of the selected version.
 
