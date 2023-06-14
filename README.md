@@ -15,7 +15,7 @@ With some free time on my hands, I decided to develop this program to refresh my
 Please note that I am not a seasoned programmer. I developed the program based on my own understanding and iteratively fixed issues while working on optimization. There may still be areas where efficiency can be improved.
 
 I sincerely appreciate any constructive critique, as my goal is to continue learning and develop in the most efficient and best-practice manner possible.
-
+`[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
 ## Changelog
 Since this is the initial version of KDA-SP, there is currently no Changelog available. However, future versions of the program will include a Changelog documenting the changes, improvements, and bug fixes introduced in each update.
 ## Installation:
@@ -32,9 +32,7 @@ Since this is the initial version of KDA-SP, there is currently no Changelog ava
 > has been tested with League of Legends, but it may also work with
 > other similar games that have clear and consistent KDA display
 > patterns.
-
-
-
+> 
 **Q: Can I customize the sounds in KDA-SP?****
 
 > A: Yes, you can customize the sounds played by KDA-SP. The program allows you to select your preferred audio files for kill, death, and assist events. You can choose any audio file in formats like mp3 or wav. However, it's important to note that using very long audio files may result in audio overlapping or errors during playback.
@@ -84,10 +82,11 @@ Since this is the initial version of KDA-SP, there is currently no Changelog ava
 
 >A: You can report any issues or provide feedback for KDA-SP on the program's GitHub repository. Visit the repository's "Issues" section and create a new issue to describe the problem or share your feedback. I will try my best to help with issues and fix them as needed.
 
+## Used libraries:
+- [Tesseract](https://github.com/tesseract-ocr/tesseract) 
 <br>
-<br>
-
-## Support
+##
+### Support
 
 At the moment, there is no option for financial support. However, this may change in the future. Please refer to the latest version of KDA-SP and its corresponding README file to check for any updates regarding financial support.
 
