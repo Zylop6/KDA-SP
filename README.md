@@ -83,7 +83,9 @@ Since this is the initial version of KDA-SP, there is currently no Changelog ava
 
 ## Used libraries:
 - [Tesseract](https://github.com/tesseract-ocr/tesseract) 
+
 <br>
+
 ##
 
 ### Support
