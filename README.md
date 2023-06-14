@@ -1,6 +1,5 @@
 
-  
-
+  ![GitHub](https://img.shields.io/github/license/Zylop6/KDA-SP?color=%23110&style=for-the-badge)  
 # KDA-SoundPlayer
 
 ### Latest version:  [KDA-SP_v1.0.1](https://github.com/Zylop6/KDA-SP/releases/tag/v1.0.1)
@@ -15,7 +14,7 @@ With some free time on my hands, I decided to develop this program to refresh my
 Please note that I am not a seasoned programmer. I developed the program based on my own understanding and iteratively fixed issues while working on optimization. There may still be areas where efficiency can be improved.
 
 I sincerely appreciate any constructive critique, as my goal is to continue learning and develop in the most efficient and best-practice manner possible.
-`[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
+
 ## Changelog
 Since this is the initial version of KDA-SP, there is currently no Changelog available. However, future versions of the program will include a Changelog documenting the changes, improvements, and bug fixes introduced in each update.
 ## Installation:
