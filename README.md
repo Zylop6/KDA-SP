@@ -18,7 +18,7 @@ I sincerely appreciate any constructive critique, as my goal is to continue lear
 ## Changelog
 Since this is the initial version of KDA-SP, there is currently no Changelog available. However, future versions of the program will include a Changelog documenting the changes, improvements, and bug fixes introduced in each update.
 ## Installation:
-1.  Navigate to the [release page](https://github.com/Zylop6/KDA-SP/releases) of the program.
+1.  Navigate to the [release page](https://github.com/Zylop6/KDA-SP/releases) of KDA-SP.
 2.  Choose your desired version from the available releases.
 3.  Read the installation instructions provided in the description of the selected version.
 
@@ -83,8 +83,11 @@ Since this is the initial version of KDA-SP, there is currently no Changelog ava
 
 ## Used libraries:
 - [Tesseract](https://github.com/tesseract-ocr/tesseract) 
+
 <br>
+
 ##
+
 ### Support
 
 At the moment, there is no option for financial support. However, this may change in the future. Please refer to the latest version of KDA-SP and its corresponding README file to check for any updates regarding financial support.
