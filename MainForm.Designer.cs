@@ -1232,7 +1232,6 @@
             this.Zylop6GitHub.TabIndex = 60;
             this.Zylop6GitHub.TabStop = true;
             this.Zylop6GitHub.Text = "https://github.com/Zylop6";
-            this.Zylop6GitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Zylop6GitHub_LinkClicked);
             // 
             // VGitHubLabel
             // 
