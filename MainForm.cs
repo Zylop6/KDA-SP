@@ -102,7 +102,7 @@ namespace KDA_SP
 
             public void PerformanceMonitoring(Label memoryUsageLabel, Label cpuUsageLabel)
             {
-                float memoryUsage = memoryCounter.NextValue() / (1024 * 1024); // Arbeitsspeicher in Megabytes
+                float memoryUsage = memoryCounter.NextValue() / (1024 * 1024);
                 float cpuUsage = cpuCounter.NextValue();
 
                 memoryUsageLabel.Text = $"Memory Usage: {memoryUsage:F2} MB";
@@ -121,11 +121,12 @@ namespace KDA_SP
             TestKillSoundButton.Enabled = false;
             TestDeathSoundButton.Enabled = false;
             TestAssistSoundButton.Enabled = false;
-            this.Size = new Size(1132, 360);
+            this.Size = new Size(1135, 360);
             this.Icon = Properties.Resources.KDA_SP_ICON;
             performanceMonitor = new PerformanceMonitor();
             ScanIntervalScale.Value = 125;
         }
+
         //==========================================================================================================
         //-------------- Main  --------------
         private void InitializeCaptureTimer()
@@ -355,12 +356,10 @@ namespace KDA_SP
             try
             {
                 resultBitmap = (Bitmap)Image.FromHbitmap(bitmap);
-                // Clone the bitmap to ensure it can be safely disposed of outside this method
                 return (Bitmap)resultBitmap.Clone();
             }
             finally
             {
-                // Dispose of the resultBitmap if it was created, to release GDI+ resources
                 resultBitmap?.Dispose();
                 DeleteObject(bitmap);
             }
@@ -440,17 +439,17 @@ namespace KDA_SP
             {
                 isExtended = true;
                 ExpandExtraButton.BackgroundImage = Properties.Resources.Colapse_icon;
-                this.MaximumSize = new Size(1574, 493);
-                this.MinimumSize = new Size(1574, 493);
-                this.Size = new Size(1578, 493);
+                this.MaximumSize = new Size(1574, 360);
+                this.MinimumSize = new Size(1574, 360);
+                this.Size = new Size(1578, 360);
             }
             else
             {
                 isExtended = false;
                 ExpandExtraButton.BackgroundImage = Properties.Resources.Expand_icon;
-                this.MaximumSize = new Size(1132, 360);
-                this.MinimumSize = new Size(1132, 360);
-                this.Size = new Size(1132, 360);
+                this.MaximumSize = new Size(1135, 360);
+                this.MinimumSize = new Size(1135, 360);
+                this.Size = new Size(1135, 360);
             }
         }
         private void FilteredPreviewButtonClick(object sender, EventArgs e)
@@ -623,12 +622,10 @@ namespace KDA_SP
                 {
                     Color pixelColor = ((Bitmap)image).GetPixel(x, y);
 
-                    // Calculate the grayscale value for the pixel
                     int grayscale = (int)(
                         pixelColor.R * 0.299 + pixelColor.G * 0.587 + pixelColor.B * 0.114
                     );
 
-                    // Determine whether to set the pixel to black or white
                     Color newColor = (grayscale >= 24) ? Color.White : Color.Black;
 
                     blackWhiteImage.SetPixel(x, y, newColor);
@@ -643,7 +640,6 @@ namespace KDA_SP
 
             using (Graphics graphics = Graphics.FromImage(grayScaleImage))
             {
-                // Create a color matrix to convert the image to grayscale
                 ColorMatrix colorMatrix = new ColorMatrix(
                     new float[][]
                     {
@@ -655,12 +651,10 @@ namespace KDA_SP
                     }
                 );
 
-                // Create an ImageAttributes object and set the color matrix
                 using (ImageAttributes attributes = new ImageAttributes())
                 {
                     attributes.SetColorMatrix(colorMatrix);
 
-                    // Draw the original image onto the grayscale image
                     graphics.DrawImage(
                         image,
                         new Rectangle(0, 0, image.Width, image.Height),

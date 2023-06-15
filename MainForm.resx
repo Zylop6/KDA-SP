@@ -317,18 +317,6 @@
   <metadata name="pageSetupDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>158, 17</value>
   </metadata>
-  <data name="SupportingTextLabel.Text" xml:space="preserve">
-    <value>As I am still in the learning process, I value any feedback and constructive criticism that can contribute to my educational development. Additionally, you can support me by following my social media channels and accounts. 
-However, please note that I am currently unable to accept any form of financial support.
-
-I appreciate your support!</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>This Project is published under the GNU General Public License and therefor open source, 
-if you wish to check out the code, you can visit my github by the link above and looking for the respository for this project.
-
-Thanks for using this software!</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIACsSgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAASnNJ
