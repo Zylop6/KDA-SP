@@ -99,6 +99,9 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.ExtraTitleLabel = new System.Windows.Forms.Label();
             this.ExtraPanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ScanIntervalScaleLabel = new System.Windows.Forms.Label();
+            this.ScanIntervalScale = new System.Windows.Forms.TrackBar();
             this.MemoryUsageLabel = new System.Windows.Forms.Label();
             this.VMemoryUsageLabel = new System.Windows.Forms.Label();
             this.CPUUsageLabel = new System.Windows.Forms.Label();
@@ -108,14 +111,8 @@
             this.VCleanOutputLabel = new System.Windows.Forms.Label();
             this.VRawOutputLabel = new System.Windows.Forms.Label();
             this.SocialMediaPanel = new System.Windows.Forms.Panel();
-            this.VTwitchLabel = new System.Windows.Forms.Label();
-            this.Zylop6Twitch = new System.Windows.Forms.LinkLabel();
             this.Zylop6GitHub = new System.Windows.Forms.LinkLabel();
-            this.VInstagramLabel = new System.Windows.Forms.Label();
-            this.Zylop6Instagram = new System.Windows.Forms.LinkLabel();
             this.VGitHubLabel = new System.Windows.Forms.Label();
-            this.Zylop6YouTube = new System.Windows.Forms.LinkLabel();
-            this.VYouTubeLabel = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.SocialMediaTitleLabel = new System.Windows.Forms.Label();
             this.SupportingPanel = new System.Windows.Forms.Panel();
@@ -126,9 +123,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SourceCodeTitleLabel = new System.Windows.Forms.Label();
-            this.ScanIntervalScale = new System.Windows.Forms.TrackBar();
-            this.ScanIntervalScaleLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.KillVolumeSlider)).BeginInit();
             this.panel1.SuspendLayout();
             this.SoundSelectionPanel.SuspendLayout();
@@ -151,13 +146,13 @@
             this.SoundsPanel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.ExtraPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ScanIntervalScale)).BeginInit();
             this.SocialMediaPanel.SuspendLayout();
             this.panel19.SuspendLayout();
             this.SupportingPanel.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ScanIntervalScale)).BeginInit();
             this.SuspendLayout();
             // 
             // KillVolumeSlider
@@ -1065,6 +1060,42 @@
             this.ExtraPanel.Size = new System.Drawing.Size(426, 151);
             this.ExtraPanel.TabIndex = 43;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(9, 132);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 13);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Time between scans :";
+            // 
+            // ScanIntervalScaleLabel
+            // 
+            this.ScanIntervalScaleLabel.AutoSize = true;
+            this.ScanIntervalScaleLabel.ForeColor = System.Drawing.Color.White;
+            this.ScanIntervalScaleLabel.Location = new System.Drawing.Point(137, 132);
+            this.ScanIntervalScaleLabel.Name = "ScanIntervalScaleLabel";
+            this.ScanIntervalScaleLabel.Size = new System.Drawing.Size(41, 13);
+            this.ScanIntervalScaleLabel.TabIndex = 37;
+            this.ScanIntervalScaleLabel.Text = "125 ms";
+            // 
+            // ScanIntervalScale
+            // 
+            this.ScanIntervalScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(35)))));
+            this.ScanIntervalScale.Location = new System.Drawing.Point(3, 111);
+            this.ScanIntervalScale.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.ScanIntervalScale.Maximum = 1250;
+            this.ScanIntervalScale.Minimum = 10;
+            this.ScanIntervalScale.Name = "ScanIntervalScale";
+            this.ScanIntervalScale.Size = new System.Drawing.Size(420, 45);
+            this.ScanIntervalScale.TabIndex = 37;
+            this.ScanIntervalScale.TabStop = false;
+            this.ScanIntervalScale.TickFrequency = 0;
+            this.ScanIntervalScale.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.ScanIntervalScale.Value = 125;
+            this.ScanIntervalScale.ValueChanged += new System.EventHandler(this.ScanIntervalChanged);
+            // 
             // MemoryUsageLabel
             // 
             this.MemoryUsageLabel.AutoSize = true;
@@ -1180,14 +1211,9 @@
             // SocialMediaPanel
             // 
             this.SocialMediaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(35)))));
-            this.SocialMediaPanel.Controls.Add(this.VTwitchLabel);
-            this.SocialMediaPanel.Controls.Add(this.Zylop6Twitch);
+            this.SocialMediaPanel.Controls.Add(this.label3);
             this.SocialMediaPanel.Controls.Add(this.Zylop6GitHub);
-            this.SocialMediaPanel.Controls.Add(this.VInstagramLabel);
-            this.SocialMediaPanel.Controls.Add(this.Zylop6Instagram);
             this.SocialMediaPanel.Controls.Add(this.VGitHubLabel);
-            this.SocialMediaPanel.Controls.Add(this.Zylop6YouTube);
-            this.SocialMediaPanel.Controls.Add(this.VYouTubeLabel);
             this.SocialMediaPanel.Controls.Add(this.panel19);
             this.SocialMediaPanel.Location = new System.Drawing.Point(1127, 162);
             this.SocialMediaPanel.Margin = new System.Windows.Forms.Padding(15);
@@ -1195,40 +1221,12 @@
             this.SocialMediaPanel.Size = new System.Drawing.Size(426, 153);
             this.SocialMediaPanel.TabIndex = 60;
             // 
-            // VTwitchLabel
-            // 
-            this.VTwitchLabel.AutoSize = true;
-            this.VTwitchLabel.BackColor = System.Drawing.Color.Transparent;
-            this.VTwitchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.VTwitchLabel.ForeColor = System.Drawing.Color.White;
-            this.VTwitchLabel.Location = new System.Drawing.Point(26, 59);
-            this.VTwitchLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.VTwitchLabel.Name = "VTwitchLabel";
-            this.VTwitchLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.VTwitchLabel.Size = new System.Drawing.Size(56, 27);
-            this.VTwitchLabel.TabIndex = 62;
-            this.VTwitchLabel.Text = "Twitch :";
-            this.VTwitchLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Zylop6Twitch
-            // 
-            this.Zylop6Twitch.AutoSize = true;
-            this.Zylop6Twitch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Zylop6Twitch.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Zylop6Twitch.Location = new System.Drawing.Point(85, 64);
-            this.Zylop6Twitch.Name = "Zylop6Twitch";
-            this.Zylop6Twitch.Size = new System.Drawing.Size(177, 17);
-            this.Zylop6Twitch.TabIndex = 61;
-            this.Zylop6Twitch.TabStop = true;
-            this.Zylop6Twitch.Text = "https://www.twitch.tv/zylop6";
-            this.Zylop6Twitch.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Zylop6Twitch_LinkClicked);
-            // 
             // Zylop6GitHub
             // 
             this.Zylop6GitHub.AutoSize = true;
             this.Zylop6GitHub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Zylop6GitHub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Zylop6GitHub.Location = new System.Drawing.Point(85, 118);
+            this.Zylop6GitHub.Location = new System.Drawing.Point(86, 87);
             this.Zylop6GitHub.Name = "Zylop6GitHub";
             this.Zylop6GitHub.Size = new System.Drawing.Size(167, 17);
             this.Zylop6GitHub.TabIndex = 60;
@@ -1236,41 +1234,13 @@
             this.Zylop6GitHub.Text = "https://github.com/Zylop6";
             this.Zylop6GitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Zylop6GitHub_LinkClicked);
             // 
-            // VInstagramLabel
-            // 
-            this.VInstagramLabel.AutoSize = true;
-            this.VInstagramLabel.BackColor = System.Drawing.Color.Transparent;
-            this.VInstagramLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.VInstagramLabel.ForeColor = System.Drawing.Color.White;
-            this.VInstagramLabel.Location = new System.Drawing.Point(4, 86);
-            this.VInstagramLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.VInstagramLabel.Name = "VInstagramLabel";
-            this.VInstagramLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.VInstagramLabel.Size = new System.Drawing.Size(78, 27);
-            this.VInstagramLabel.TabIndex = 59;
-            this.VInstagramLabel.Text = "Instagram :";
-            this.VInstagramLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Zylop6Instagram
-            // 
-            this.Zylop6Instagram.AutoSize = true;
-            this.Zylop6Instagram.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Zylop6Instagram.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Zylop6Instagram.Location = new System.Drawing.Point(85, 91);
-            this.Zylop6Instagram.Name = "Zylop6Instagram";
-            this.Zylop6Instagram.Size = new System.Drawing.Size(223, 17);
-            this.Zylop6Instagram.TabIndex = 58;
-            this.Zylop6Instagram.TabStop = true;
-            this.Zylop6Instagram.Text = "https://www.instagram.com/zylop6/";
-            this.Zylop6Instagram.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Zylop6Instagram_LinkClicked);
-            // 
             // VGitHubLabel
             // 
             this.VGitHubLabel.AutoSize = true;
             this.VGitHubLabel.BackColor = System.Drawing.Color.Transparent;
             this.VGitHubLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.VGitHubLabel.ForeColor = System.Drawing.Color.White;
-            this.VGitHubLabel.Location = new System.Drawing.Point(22, 113);
+            this.VGitHubLabel.Location = new System.Drawing.Point(23, 82);
             this.VGitHubLabel.Margin = new System.Windows.Forms.Padding(0);
             this.VGitHubLabel.Name = "VGitHubLabel";
             this.VGitHubLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
@@ -1278,34 +1248,6 @@
             this.VGitHubLabel.TabIndex = 57;
             this.VGitHubLabel.Text = "GitHub :";
             this.VGitHubLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Zylop6YouTube
-            // 
-            this.Zylop6YouTube.AutoSize = true;
-            this.Zylop6YouTube.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Zylop6YouTube.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Zylop6YouTube.Location = new System.Drawing.Point(85, 37);
-            this.Zylop6YouTube.Name = "Zylop6YouTube";
-            this.Zylop6YouTube.Size = new System.Drawing.Size(224, 17);
-            this.Zylop6YouTube.TabIndex = 56;
-            this.Zylop6YouTube.TabStop = true;
-            this.Zylop6YouTube.Text = "https://www.youtube.com/@Zylop6";
-            this.Zylop6YouTube.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Zylop6YouTube_LinkClicked);
-            // 
-            // VYouTubeLabel
-            // 
-            this.VYouTubeLabel.AutoSize = true;
-            this.VYouTubeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.VYouTubeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.VYouTubeLabel.ForeColor = System.Drawing.Color.White;
-            this.VYouTubeLabel.Location = new System.Drawing.Point(8, 32);
-            this.VYouTubeLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.VYouTubeLabel.Name = "VYouTubeLabel";
-            this.VYouTubeLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.VYouTubeLabel.Size = new System.Drawing.Size(74, 27);
-            this.VYouTubeLabel.TabIndex = 54;
-            this.VYouTubeLabel.Text = "YouTube :";
-            this.VYouTubeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel19
             // 
@@ -1324,9 +1266,9 @@
             this.SocialMediaTitleLabel.ForeColor = System.Drawing.Color.White;
             this.SocialMediaTitleLabel.Location = new System.Drawing.Point(147, -3);
             this.SocialMediaTitleLabel.Name = "SocialMediaTitleLabel";
-            this.SocialMediaTitleLabel.Size = new System.Drawing.Size(133, 28);
+            this.SocialMediaTitleLabel.Size = new System.Drawing.Size(135, 28);
             this.SocialMediaTitleLabel.TabIndex = 1;
-            this.SocialMediaTitleLabel.Text = "Social Media";
+            this.SocialMediaTitleLabel.Text = "Coming soon";
             // 
             // SupportingPanel
             // 
@@ -1420,48 +1362,26 @@
             this.SourceCodeTitleLabel.TabIndex = 1;
             this.SourceCodeTitleLabel.Text = "Source code";
             // 
-            // ScanIntervalScale
+            // label3
             // 
-            this.ScanIntervalScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(35)))));
-            this.ScanIntervalScale.Location = new System.Drawing.Point(3, 111);
-            this.ScanIntervalScale.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.ScanIntervalScale.Maximum = 1250;
-            this.ScanIntervalScale.Minimum = 10;
-            this.ScanIntervalScale.Name = "ScanIntervalScale";
-            this.ScanIntervalScale.Size = new System.Drawing.Size(420, 45);
-            this.ScanIntervalScale.TabIndex = 37;
-            this.ScanIntervalScale.TabStop = false;
-            this.ScanIntervalScale.TickFrequency = 0;
-            this.ScanIntervalScale.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.ScanIntervalScale.Value = 125;
-            this.ScanIntervalScale.ValueChanged += new System.EventHandler(this.ScanIntervalChanged);
-            // 
-            // ScanIntervalScaleLabel
-            // 
-            this.ScanIntervalScaleLabel.AutoSize = true;
-            this.ScanIntervalScaleLabel.ForeColor = System.Drawing.Color.White;
-            this.ScanIntervalScaleLabel.Location = new System.Drawing.Point(137, 132);
-            this.ScanIntervalScaleLabel.Name = "ScanIntervalScaleLabel";
-            this.ScanIntervalScaleLabel.Size = new System.Drawing.Size(41, 13);
-            this.ScanIntervalScaleLabel.TabIndex = 37;
-            this.ScanIntervalScaleLabel.Text = "125 ms";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(9, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 13);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "Time between scans :";
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(19, 38);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(3);
+            this.label3.Size = new System.Drawing.Size(228, 48);
+            this.label3.TabIndex = 63;
+            this.label3.Text = "Check for newer versions of KDA-SP on my GitHub:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(1116, 321);
+            this.ClientSize = new System.Drawing.Size(1554, 453);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.SupportingPanel);
             this.Controls.Add(this.SocialMediaPanel);
@@ -1481,12 +1401,11 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1132, 360);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1132, 360);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "KDA-SP";
+            this.Text = "KDA-SP v1.0.1";
             ((System.ComponentModel.ISupportInitialize)(this.KillVolumeSlider)).EndInit();
             this.panel1.ResumeLayout(false);
             this.SoundSelectionPanel.ResumeLayout(false);
@@ -1520,6 +1439,7 @@
             this.panel6.PerformLayout();
             this.ExtraPanel.ResumeLayout(false);
             this.ExtraPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ScanIntervalScale)).EndInit();
             this.SocialMediaPanel.ResumeLayout(false);
             this.SocialMediaPanel.PerformLayout();
             this.panel19.ResumeLayout(false);
@@ -1530,7 +1450,6 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ScanIntervalScale)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1614,20 +1533,14 @@
         private System.Windows.Forms.Label RawOutputLabel;
         private System.Windows.Forms.Label VCleanOutputLabel;
         private System.Windows.Forms.Panel SocialMediaPanel;
-        private System.Windows.Forms.LinkLabel Zylop6YouTube;
-        private System.Windows.Forms.Label VYouTubeLabel;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Label SocialMediaTitleLabel;
-        private System.Windows.Forms.LinkLabel Zylop6Instagram;
         private System.Windows.Forms.Label VGitHubLabel;
         private System.Windows.Forms.LinkLabel Zylop6GitHub;
-        private System.Windows.Forms.Label VInstagramLabel;
         private System.Windows.Forms.Panel SupportingPanel;
         private System.Windows.Forms.Label SupportingTextLabel;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label VTwitchLabel;
-        private System.Windows.Forms.LinkLabel Zylop6Twitch;
         private CustomButton FilteredPreviewButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
@@ -1636,6 +1549,7 @@
         private System.Windows.Forms.TrackBar ScanIntervalScale;
         private System.Windows.Forms.Label ScanIntervalScaleLabel;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

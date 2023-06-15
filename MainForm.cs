@@ -562,24 +562,6 @@ namespace KDA_SP
             }
         }
 
-        //Links
-        private void Zylop6YouTube_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://www.youtube.com/@Zylop6");
-        }
-        private void Zylop6Instagram_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://www.instagram.com/zylop6");
-        }
-        private void Zylop6GitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://github.com/Zylop6");
-        }
-        private void Zylop6Twitch_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://www.twitch.tv/zylop6");
-        }
-
         //==========================================================================================================
         //-------------- Miscellaneous  --------------
         //Scanning interval
