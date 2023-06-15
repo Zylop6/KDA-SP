@@ -111,11 +111,11 @@
             this.VCleanOutputLabel = new System.Windows.Forms.Label();
             this.VRawOutputLabel = new System.Windows.Forms.Label();
             this.SocialMediaPanel = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.Zylop6GitHub = new System.Windows.Forms.LinkLabel();
             this.VGitHubLabel = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.SocialMediaTitleLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.KillVolumeSlider)).BeginInit();
             this.panel1.SuspendLayout();
             this.SoundSelectionPanel.SuspendLayout();
@@ -1045,14 +1045,14 @@
             this.ExtraPanel.Location = new System.Drawing.Point(1127, 5);
             this.ExtraPanel.Margin = new System.Windows.Forms.Padding(15);
             this.ExtraPanel.Name = "ExtraPanel";
-            this.ExtraPanel.Size = new System.Drawing.Size(426, 180);
+            this.ExtraPanel.Size = new System.Drawing.Size(426, 181);
             this.ExtraPanel.TabIndex = 43;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(9, 146);
+            this.label2.Location = new System.Drawing.Point(9, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 13);
             this.label2.TabIndex = 37;
@@ -1062,7 +1062,7 @@
             // 
             this.ScanIntervalScaleLabel.AutoSize = true;
             this.ScanIntervalScaleLabel.ForeColor = System.Drawing.Color.White;
-            this.ScanIntervalScaleLabel.Location = new System.Drawing.Point(137, 146);
+            this.ScanIntervalScaleLabel.Location = new System.Drawing.Point(137, 149);
             this.ScanIntervalScaleLabel.Name = "ScanIntervalScaleLabel";
             this.ScanIntervalScaleLabel.Size = new System.Drawing.Size(41, 13);
             this.ScanIntervalScaleLabel.TabIndex = 37;
@@ -1071,7 +1071,7 @@
             // ScanIntervalScale
             // 
             this.ScanIntervalScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(35)))));
-            this.ScanIntervalScale.Location = new System.Drawing.Point(3, 125);
+            this.ScanIntervalScale.Location = new System.Drawing.Point(3, 127);
             this.ScanIntervalScale.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ScanIntervalScale.Maximum = 1250;
             this.ScanIntervalScale.Minimum = 10;
@@ -1090,7 +1090,7 @@
             this.MemoryUsageLabel.BackColor = System.Drawing.Color.Transparent;
             this.MemoryUsageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.MemoryUsageLabel.ForeColor = System.Drawing.Color.White;
-            this.MemoryUsageLabel.Location = new System.Drawing.Point(114, 92);
+            this.MemoryUsageLabel.Location = new System.Drawing.Point(120, 92);
             this.MemoryUsageLabel.Margin = new System.Windows.Forms.Padding(0);
             this.MemoryUsageLabel.Name = "MemoryUsageLabel";
             this.MemoryUsageLabel.Size = new System.Drawing.Size(42, 17);
@@ -1104,7 +1104,7 @@
             this.VMemoryUsageLabel.BackColor = System.Drawing.Color.Transparent;
             this.VMemoryUsageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.VMemoryUsageLabel.ForeColor = System.Drawing.Color.White;
-            this.VMemoryUsageLabel.Location = new System.Drawing.Point(9, 92);
+            this.VMemoryUsageLabel.Location = new System.Drawing.Point(15, 92);
             this.VMemoryUsageLabel.Margin = new System.Windows.Forms.Padding(0);
             this.VMemoryUsageLabel.Name = "VMemoryUsageLabel";
             this.VMemoryUsageLabel.Size = new System.Drawing.Size(105, 17);
@@ -1118,7 +1118,7 @@
             this.CPUUsageLabel.BackColor = System.Drawing.Color.Transparent;
             this.CPUUsageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.CPUUsageLabel.ForeColor = System.Drawing.Color.White;
-            this.CPUUsageLabel.Location = new System.Drawing.Point(114, 75);
+            this.CPUUsageLabel.Location = new System.Drawing.Point(120, 75);
             this.CPUUsageLabel.Margin = new System.Windows.Forms.Padding(0);
             this.CPUUsageLabel.Name = "CPUUsageLabel";
             this.CPUUsageLabel.Size = new System.Drawing.Size(42, 17);
@@ -1132,7 +1132,7 @@
             this.VCPUUsageLabel.BackColor = System.Drawing.Color.Transparent;
             this.VCPUUsageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.VCPUUsageLabel.ForeColor = System.Drawing.Color.White;
-            this.VCPUUsageLabel.Location = new System.Drawing.Point(31, 75);
+            this.VCPUUsageLabel.Location = new System.Drawing.Point(37, 75);
             this.VCPUUsageLabel.Margin = new System.Windows.Forms.Padding(0);
             this.VCPUUsageLabel.Name = "VCPUUsageLabel";
             this.VCPUUsageLabel.Size = new System.Drawing.Size(83, 17);
@@ -1146,7 +1146,7 @@
             this.CleanOutputLabel.BackColor = System.Drawing.Color.Transparent;
             this.CleanOutputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.CleanOutputLabel.ForeColor = System.Drawing.Color.White;
-            this.CleanOutputLabel.Location = new System.Drawing.Point(114, 46);
+            this.CleanOutputLabel.Location = new System.Drawing.Point(120, 46);
             this.CleanOutputLabel.Margin = new System.Windows.Forms.Padding(0);
             this.CleanOutputLabel.Name = "CleanOutputLabel";
             this.CleanOutputLabel.Size = new System.Drawing.Size(42, 17);
@@ -1160,7 +1160,7 @@
             this.RawOutputLabel.BackColor = System.Drawing.Color.Transparent;
             this.RawOutputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.RawOutputLabel.ForeColor = System.Drawing.Color.White;
-            this.RawOutputLabel.Location = new System.Drawing.Point(114, 29);
+            this.RawOutputLabel.Location = new System.Drawing.Point(120, 29);
             this.RawOutputLabel.Margin = new System.Windows.Forms.Padding(0);
             this.RawOutputLabel.Name = "RawOutputLabel";
             this.RawOutputLabel.Size = new System.Drawing.Size(42, 17);
@@ -1174,7 +1174,7 @@
             this.VCleanOutputLabel.BackColor = System.Drawing.Color.Transparent;
             this.VCleanOutputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.VCleanOutputLabel.ForeColor = System.Drawing.Color.White;
-            this.VCleanOutputLabel.Location = new System.Drawing.Point(24, 46);
+            this.VCleanOutputLabel.Location = new System.Drawing.Point(30, 46);
             this.VCleanOutputLabel.Margin = new System.Windows.Forms.Padding(0);
             this.VCleanOutputLabel.Name = "VCleanOutputLabel";
             this.VCleanOutputLabel.Size = new System.Drawing.Size(92, 17);
@@ -1188,7 +1188,7 @@
             this.VRawOutputLabel.BackColor = System.Drawing.Color.Transparent;
             this.VRawOutputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.VRawOutputLabel.ForeColor = System.Drawing.Color.White;
-            this.VRawOutputLabel.Location = new System.Drawing.Point(31, 29);
+            this.VRawOutputLabel.Location = new System.Drawing.Point(37, 29);
             this.VRawOutputLabel.Margin = new System.Windows.Forms.Padding(0);
             this.VRawOutputLabel.Name = "VRawOutputLabel";
             this.VRawOutputLabel.Size = new System.Drawing.Size(83, 17);
@@ -1199,7 +1199,7 @@
             // SocialMediaPanel
             // 
             this.SocialMediaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(35)))));
-            this.SocialMediaPanel.Controls.Add(this.label3);
+            this.SocialMediaPanel.Controls.Add(this.label1);
             this.SocialMediaPanel.Controls.Add(this.Zylop6GitHub);
             this.SocialMediaPanel.Controls.Add(this.VGitHubLabel);
             this.SocialMediaPanel.Controls.Add(this.panel19);
@@ -1209,32 +1209,18 @@
             this.SocialMediaPanel.Size = new System.Drawing.Size(426, 123);
             this.SocialMediaPanel.TabIndex = 60;
             // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(19, 38);
-            this.label3.Margin = new System.Windows.Forms.Padding(0);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(3);
-            this.label3.Size = new System.Drawing.Size(333, 48);
-            this.label3.TabIndex = 63;
-            this.label3.Text = "If you\'re interested, you can check out the latest version of KDA-SP on my GitHub" +
-    ":\r\n\r\n\r\n\r\n";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // Zylop6GitHub
             // 
             this.Zylop6GitHub.AutoSize = true;
             this.Zylop6GitHub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Zylop6GitHub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Zylop6GitHub.Location = new System.Drawing.Point(86, 87);
+            this.Zylop6GitHub.Location = new System.Drawing.Point(82, 82);
             this.Zylop6GitHub.Name = "Zylop6GitHub";
-            this.Zylop6GitHub.Size = new System.Drawing.Size(167, 17);
+            this.Zylop6GitHub.Size = new System.Drawing.Size(222, 17);
             this.Zylop6GitHub.TabIndex = 60;
             this.Zylop6GitHub.TabStop = true;
-            this.Zylop6GitHub.Text = "https://github.com/Zylop6";
+            this.Zylop6GitHub.Text = "https://github.com/Zylop6/KDA-SP";
+            this.Zylop6GitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Zylop6GitHub_LinkClicked);
             // 
             // VGitHubLabel
             // 
@@ -1242,7 +1228,7 @@
             this.VGitHubLabel.BackColor = System.Drawing.Color.Transparent;
             this.VGitHubLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.VGitHubLabel.ForeColor = System.Drawing.Color.White;
-            this.VGitHubLabel.Location = new System.Drawing.Point(23, 82);
+            this.VGitHubLabel.Location = new System.Drawing.Point(19, 77);
             this.VGitHubLabel.Margin = new System.Windows.Forms.Padding(0);
             this.VGitHubLabel.Name = "VGitHubLabel";
             this.VGitHubLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
@@ -1268,16 +1254,32 @@
             this.SocialMediaTitleLabel.ForeColor = System.Drawing.Color.White;
             this.SocialMediaTitleLabel.Location = new System.Drawing.Point(147, -3);
             this.SocialMediaTitleLabel.Name = "SocialMediaTitleLabel";
-            this.SocialMediaTitleLabel.Size = new System.Drawing.Size(135, 28);
+            this.SocialMediaTitleLabel.Size = new System.Drawing.Size(142, 28);
             this.SocialMediaTitleLabel.TabIndex = 1;
-            this.SocialMediaTitleLabel.Text = "Coming soon";
+            this.SocialMediaTitleLabel.Text = "Coming soon!";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(19, 29);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.label1.Size = new System.Drawing.Size(374, 44);
+            this.label1.TabIndex = 61;
+            this.label1.Text = "More features are planned and currently being worked on!\r\nPlease check the projec" +
+    "t\'s repository for updates:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(1119, 321);
+            this.ClientSize = new System.Drawing.Size(1572, 324);
             this.Controls.Add(this.SocialMediaPanel);
             this.Controls.Add(this.ExtraPanel);
             this.Controls.Add(this.panel14);
@@ -1295,9 +1297,8 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1135, 360);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1132, 360);
+            this.MinimumSize = new System.Drawing.Size(16, 39);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KDA-SP v1.0.1";
@@ -1430,7 +1431,7 @@
         private System.Windows.Forms.TrackBar ScanIntervalScale;
         private System.Windows.Forms.Label ScanIntervalScaleLabel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
     }
 }
 
